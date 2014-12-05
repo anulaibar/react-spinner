@@ -1,0 +1,34 @@
+body {
+    background-color: LightPink;
+}
+
+.box {
+    background-color: HotPink;
+    width: 200px;
+    height: 200px;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.loader {
+    -webkit-animation: spin 0.75s infinite linear;
+    animation: spin 0.75s infinite linear;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-right-color: #fff;
+    display: inline-block;
+}
